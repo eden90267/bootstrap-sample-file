@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<title>Bootstrap課程範例下載</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<style type="text/css">
+			himl,body{
+				height: 100%;
+				overflow: hidden;
+				font-size: 0;
+				color: #fff;
+			}
+			.jumbotron{
+				height: 100vh;
+				background-image:url('amos.png'), linear-gradient(120deg, #6a11cb 0%, #2575fc 100%);
+				background-position: bottom right, left top;
+				background-repeat: no-repeat;
+				background-size: auto 90%, 100% 100%;
+			}
+			.jumbotron:before{
+				content: '';
+				height: 100%;
+				display: inline-block;
+				width: 0;
+				vertical-align: middle;
+			}
+			.jumbotron .container{
+				display: inline-block;
+				vertical-align: middle;
+			}
+			h1{
+				line-height: 1.4;
+				margin-bottom: 20px;
+				text-shadow: 0 0 20px rgba(0, 0, 0, .6);
+			}
+			h1 + p{
+				padding-bottom: 50px;
+				text-shadow: 0 0 20px rgba(0, 0, 0, .6);
+			}
+			a{
+				position: relative;
+				top: 0;
+				padding: 10px 16px;
+			    font-size: 18px;
+			    line-height: 1.3333333;
+			    border-radius: 6px;
+			    color: #fff;
+			    font-weight: 400;
+			    text-align: center;
+			    white-space: nowrap;
+			    vertical-align: middle;
+				transition: .2s;
+			}
+			.sample{ 
+				box-shadow: 0 6px 0px 0px #c63636;
+			    background-color: #d9534f;
+			    border-color: #d43f3a;
+			}
+			.plugin{
+				box-shadow: 0 6px 0px 0px #dd8236;
+				background-color: #f0ad4e;
+    			border-color: #eea236;
+    		}
+			a:hover{
+				top: 4px;
+			}
+			.sample:hover{ box-shadow: 0 2px 0px 0px #c63636; }
+			.plugin:hover{ box-shadow: 0 2px 0px 0px #dd8236; }
+			@media screen and (min-width:768px){
+				.plugin{
+					margin-left: 10px;
+				}
+			}
+			@media screen and (max-width:767px){
+				.plugin{
+					margin-top: 16px;
+				}
+				.jumbotron{
+					height: 100vh;
+					background-image:url('amos.png'), linear-gradient(120deg, #6a11cb 0%, #2575fc 100%);
+					background-position: bottom right, left top;
+					background-repeat: no-repeat;
+					background-size: auto 20%, 100% 100%;
+				}
+				h1 + p{
+					padding-bottom: 20px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="jumbotron text-center">
+		  <div class="container">
+		    <h1>Bootstrap <br>課程範例下載</h1>
+			  <p>感謝各位對本課程的參與，上課範例及外掛檔案請點擊下方按鈕下載</p>
+			  <p>
+			  	<a class="sample visible-sm-inline-block visible-md-inline-block visible-lg-inline-block visible-xs-block" href="bootstrap-sample.zip" role="button">
+			  		<i class="glyphicon glyphicon-save-file"></i> 下載範例檔案
+			  	</a>
+			  	<a class="plugin visible-sm-inline-block visible-md-inline-block visible-lg-inline-block visible-xs-block" href="super_bootstrap3_snippets.zip" role="button">
+			  		<i class="glyphicon glyphicon-cloud-download"></i> 下載外掛檔案
+			  	</a>
+			  </p>
+		  </div>
+		</div>
+		
+		
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+</html>

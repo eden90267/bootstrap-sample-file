@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title</title>
+		<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="../assets/js/html5shiv.js"></script>
+			<script src="../assets/js/respond.min.js"></script>
+		<![endif]-->
+		<style>
+			.topic{
+				height: 100vh;
+				box-sizing: border-box;
+				padding-top: 50px;
+			}
+			#about{ background-color: #7cf; }
+			#class{ background-color: #aaf; }
+			#location{ background-color: #aff; }
+		</style>
+	</head>
+	<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">	
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">CSS可樂</a>
+		</div>
+					
+		
+		<div class="amos-nav collapse navbar-collapse navbar-ex1-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="#about">
+						<i class="glyphicon glyphicon-th"></i> 關於CSS可樂
+					</a>
+				</li>
+				<li>
+					<a href="#class">
+						<i class="glyphicon glyphicon-list-alt"></i> 課程資訊
+					</a>
+				</li>
+				<li>
+					<a href="#location">
+						<i class="glyphicon glyphicon-map-marker"></i> 教室位置
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+	</div>
+</nav>
+
+
+<!-- 關於我們 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ -->
+	<div id="about" class="topic">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12">
+					<div class="page-header">
+					  <h1>關於CSS可樂 <small>易學好玩又有趣</small></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	
+<!-- 課程介紹 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ -->
+	<div id="class" class="topic">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12">
+					<div class="page-header">
+					  <h1>課程介紹 <small>優質豐富又專業</small></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<!-- 教室位置 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ -->
+	<div id="location" class="topic">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12">
+					<div class="page-header">
+					  <h1>教室位置 <small>好風好水好地點</small></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	
+	
+	
+
+	<script src="../assets/js/jquery1.11.1.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+	<script>
+	$(function(){
+		$('body').scrollspy({target: ".amos-nav"}); 
+	})
+	</script>
+	</body>
+</html>
