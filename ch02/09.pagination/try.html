@@ -17,6 +17,24 @@
 		.breadcrumb{
 			background-color:transparent;
 		}
+		.pagination li:first-child a,
+		.pagination li:last-child a {
+			border-radius: 0;
+		}
+		.pagination li a {
+			margin: 0 3px;
+		}
+		.amos-dropup {
+			margin-top: 20px;
+			margin-bottom: :  20px;
+			display: inline-block;
+			vertical-align: top;
+			padding: 6px;
+
+		}
+		.dropdown-toggle {
+			/* 設定drop外觀 */
+		}
 		</style>
 	</head>
 	<body>
@@ -77,10 +95,48 @@
 				<h2>理髮廳跑馬燈的金屬球光線左右不是對稱的</h2>
 				<p>在這邊 Amos 先預設光線是從右上角往左下角打，所以光線的話，應該是右邊亮的部位比較多，而左邊亮的部位比較少，所以在設定這個部分的時候，把左右兩邊的明暗設定為不同，而這部分的色彩應用方式原本是想採用 CSS3 的 radial-gradient 來製作，但是後面不論怎麼修改都不符合 Amos 所要的視覺效果，所以後面 Amos 改用了另外一種寫法，先讓 Amos 賣個關子一下，各位可以試著思考看看是否有其他 CSS3 屬性可以達到類似的效果的，老實說這做法連 Amos 自己都覺得很偏門XD，而且這是我撰寫 CSS3 上覺得最困難呈現的地方了．</p>
 				<div class="row">
-					<div class="col-sm-12 text-center">
+					<div class="col-sm-12 text-right">
 						
 
-						分頁導覽放這裡
+						<ul class="pagination">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li class="active"><a href="#">6</a></li>
+							<li><a href="#">7</a></li>
+							<li><a href="#">8</a></li>
+							<li><a href="#">9</a></li>
+							<li><a href="#">10</a></li>
+						</ul>
+
+
+						<span class="dropup amos-dropup">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">快速跳頁 <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">6</a></li>
+								<li><a href="#">7</a></li>
+								<li><a href="#">8</a></li>
+								<li><a href="#">9</a></li>
+								<li><a href="#">10</a></li>
+								<li><a href="#">11</a></li>
+								<li><a href="#">12</a></li>
+								<li><a href="#">13</a></li>
+								<li><a href="#">14</a></li>
+								<li><a href="#">15</a></li>
+								<li><a href="#">16</a></li>
+								<li><a href="#">17</a></li>
+								<li><a href="#">18</a></li>
+								<li><a href="#">19</a></li>
+								<li><a href="#">20</a></li>
+							</ul>
+						</span>
 
 					</div>
 				</div>
