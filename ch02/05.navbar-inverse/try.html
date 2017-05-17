@@ -10,10 +10,26 @@
 			<script src="../assets/js/html5shiv.js"></script>
 			<script src="../assets/js/respond.min.js"></script>
 		<![endif]-->
+		<style type="text/css">
+			.amos-nav {
+				background-color: #fa0;
+				border: none;
+				border-radius: 0;
+			}
+			.navbar-inverse .navbar-nav > li > a {
+				color:  #fff;
+			}
+			.navbar-inverse .navbar-nav > li.active > a, 
+			.navbar-inverse .navbar-nav > li.active > a:hover, 
+			.navbar-inverse .navbar-nav > li > a:hover {
+				color:  #fff;
+				background-color: #c80;
+			}
+		</style>
 	</head>
 	<body>
 
-	<nav class="navbar navbar-default" role="navigation">
+	<nav class="navbar navbar-inverse amos-nav" role="navigation">
 		<!-- LOGO及行動裝置按鈕切換區 -->
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -55,10 +71,26 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-2">
-				把下拉選單放這裡
+				<div class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉選單<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">下拉子選單項目</a></li>
+						<li><a href="#">下拉子選單項目</a></li>
+						<li><a href="#">下拉子選單項目</a></li>
+						<li><a href="#">下拉子選單項目</a></li>
+					</ul>
+				</div>
 			</div>
 			<div class="col-sm-2">
-				把上彈選單放這裡
+				<div class="dropup">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉選單<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">下拉子選單項目</a></li>
+						<li><a href="#">下拉子選單項目</a></li>
+						<li><a href="#">下拉子選單項目</a></li>
+						<li><a href="#">下拉子選單項目</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>

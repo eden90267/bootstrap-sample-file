@@ -17,6 +17,29 @@
 		.breadcrumb{
 			background-color:transparent;
 		}
+		.list-group-item:first-child,
+		.list-group-item:last-child {
+			border-radius: 0;
+		}
+		.list-group-item {
+			background-color: #000;
+			color: #fff;
+			border-color: transparent;
+			margin: 1px 0;
+		}
+		a.list-group-item{
+			background-color: #fa0;
+			color: #fff;
+		}
+		a.list-group-item.active,
+		a.list-group-item.active:hover {
+			background-color: #f60;
+			border-color: transparent;
+		}
+		a.list-group-item:hover{
+			background-color: #f80;
+			color: #fff;
+		}
 		</style>
 	</head>
 	<body>
@@ -65,7 +88,55 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-3">
-				側邊選單放這裡
+				
+
+
+				<!-- bs-list-group-link -->
+				<div class="list-group">
+					<a href="#" class="list-group-item active">清單項目 1</a>
+					<a href="#" class="list-group-item">清單項目 2</a>
+					<a href="#" class="list-group-item">清單項目 3</a>
+				</div>
+
+
+				<!-- bs-list-group-badge -->
+				<div class="list-group">
+					<a href="#" class="list-group-item active"><span class="badge">10</span>清單項目 1</a>
+					<a href="#" class="list-group-item"><span class="badge">10</span>清單項目 2</a>
+					<a href="#" class="list-group-item"><span class="badge">10</span>清單項目 3</a>
+				</div>
+
+				<!-- bs-list-group-text -->
+				<div class="list-group">
+					<a href="#" class="list-group-item active">
+						<h4 class="list-group-item-heading">標題</h4>
+						<p class="list-group-item-text">內容文字</p>
+					</a>
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">標題</h4>
+						<p class="list-group-item-text">內容文字</p>
+					</a>
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">標題</h4>
+						<p class="list-group-item-text">內容文字</p>
+					</a>
+				</div>
+
+				<!-- bs-list-group -->
+				<ul class="list-group">
+					<li class="list-group-item">清單項目 1</li>
+					<li class="list-group-item">清單項目 2</li>
+					<li class="list-group-item">清單項目 3</li>
+				</ul>
+
+				<!-- bs-list-group-badge -->
+				<ul class="list-group">
+					<li class="list-group-item"><span class="badge">10</span>清單項目 1</li>
+					<li class="list-group-item"><span class="badge">10</span>清單項目 2</li>
+					<li class="list-group-item"><span class="badge">10</span>清單項目 3</li>
+				</ul>
+
+
 			</div>
 			<div class="col-sm-9 main-content">
 				<h1>用 CSS3 畫理髮廳動態廣告跑馬燈</h1>

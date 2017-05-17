@@ -10,6 +10,20 @@
 			<script src="../assets/js/html5shiv.js"></script>
 			<script src="../assets/js/respond.min.js"></script>
 		<![endif]-->
+		<style type="text/css">
+			.breadcrumb {
+				/* background-color: transparent; */
+			}
+			.breadcrumb li + li:before {
+				content: '>';
+			}
+			.breadcrumb li a {
+				color: #888;
+			}
+			.navbar {
+				margin-bottom: 0;
+			}
+		</style>
 	</head>
 	<body>
 
@@ -53,7 +67,15 @@
 	</nav>
 	
 
-	麵包屑放這裡，上方是導覽列
+	<ol class="breadcrumb">
+		<li>
+			<a href="#">首頁</a>
+		</li>
+		<li>
+			<a href="#">最新消息</a>
+		</li>
+		<li class="active">媽我上電視了</li>
+	</ol>
 	
 
 	<script src="../assets/js/jquery1.11.1.js"></script>
