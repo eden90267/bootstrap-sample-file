@@ -11,11 +11,17 @@
 			<script src="../assets/js/respond.min.js"></script>
 		<![endif]-->
 		<style>
-		.list-inline :nth-child(3n){
+		/* .list-inline :nth-child(3n){
 			font-size: 20px;
 		}
 		.list-inline :nth-child(7n){
 			font-size: 26px;
+		} */
+		.amos li:nth-child(7n) { /* 七的倍數 */
+			font-size: 25px;
+		}
+		.amos li:nth-child(3n) {
+			font-size: 18px;
 		}
 		</style>
 	</head>
@@ -26,7 +32,7 @@
 				<div class="page-header">
 				  <h1>標籤雲製作<small>超簡單</small></h1>
 				</div>
-				<ul class="list-unstyled">
+				<ul class="amos list-inline">
 					<li><a href="#">文字陰影</a></li>
 					<li><a href="#">區塊陰影</a></li>
 					<li><a href="#">詳細的圓角邊框應用</a></li>
